@@ -262,6 +262,10 @@ p {
   animation-delay: 2.5s;
 }
 
+.fontless{
+	font-size:1rem !important;
+}
+
 /* End Hero Section */
 
 /* Services Section */
@@ -712,3 +716,4 @@ p {
   }
 }
 /* End  Media Query For Desktop */
+
