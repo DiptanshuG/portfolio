@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | Blog</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>Welcome</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li>
+                <a href="#services" data-after="Service">Services</a>
+              </li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>This is <span></span></h1>
+          <h1>Diptanshu Bhawsar <span></span></h1>
+          <a href="#projects" type="button" class="cta">Portfolio</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Service Section -->
+    <section id="services">
+      <div class="services container">
+        <div class="service-top">
+          <h1 class="section-title">What<span>i</span>do</h1>
+          <p>
+            CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK.
+          </p>
+        </div>
+        <div class="service-bottom">
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <h1>HTML</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
+              />
+              <h1>CSS</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <h1>JAVASCRIPT</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://symbols.getvecta.com/stencil_25/75_sass.57898c574e.jpg"
+              />
+              <h1>SASS</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://hopetutors.com/wp-content/uploads/2018/07/514-5142665_react-native-transparent-react-native-logo-png-png.png"
+              />
+              <h1>REACT</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://icon-library.com/images/nodejs-icon/nodejs-icon-17.jpg"
+              />
+              <h1>NODE</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX////LODfIJiXtwsHIIiHz1tbJKyrjoqHwzs7HHh3svr756+r++fnJLSz56OfflJTZfHvmqqrNQT/mrq7ZeHfFAADy1NTKMTDinJzGDwzvycnIGxrHFhTmqKjKNTTWbW3dioqpp+djAAACAklEQVR4nO3bXXOaQBiA0YiGVJE0qR+oSZP+/1/ZTg0LMyBZtDrQnHO5zL7wXInOencHAAAAAAAAAAAAAAAAAAAAAAB8JdliOi6LrGfhdpOMy2bbs/B+NhmX2b1ChUOnUOHwXVCYz+IU4WZJ3IY8bEgjb9E15PzCfLf9FmP7VCbmh7gNu/Lp0lXUhu4h5xcm08gd38t7Jcu4DYfk3IermZ49pCpcRO7oXXj+w9UsFJ6ksElhg8IoCk/7pHBZqpa6C5fNHd2FLRva1q5VuHjJj16ruZ2Fj/uPDfNVZOEkPW5I1mEpC0N+Xr0wPNw8tvClvBhb+OPteDF/qgrDkOfbFc5iC+cfF9O+hUWtMAxRqFChQoUKFSpUqFChQoVjLXwtjqK/44+tMHtfH71PO4eMt7CNQoV/KTxNocIICm9W2HZSYTiF/+CkQrrKmlZpWXMIa786Cx+7hkxbbhEK12GpdgKmOeSCE0PpvKkc++fpwlo4u9P6XrqJG1J5Ky8WYak6ppU3h9zy1Ffnd4urUaiwD4XXofALFm73aT/VedikZVx4HZkUPefG2vf9R0m2e+hnFz6i81XTQ/nJXKx7zo2+f99/BfW2rB1qbv5nJ7x61H5NHJtaYReFA6ZQ4fAp/A8K9y1f1Js2z5+PGqrHOJE/UwEAAAAAAAAAAAAAAAAAAABc4jc5DV545T6y3AAAAABJRU5ErkJggg=="
+              />
+              <h1>NPM</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://chatsdk.co/wp-content/uploads/2016/09/firebase_logo_shot.png"
+              />
+              <h1>FIREBASE</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+              />
+              <h1>CORE JAVA</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969.jpg"
+              />
+              <h1>SQL</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/mongodb-226029.png"
+              />
+              <h1>MONGO DB</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://camo.githubusercontent.com/a86a8278da4c5b5a43330e1ea28e6ba050007a837128b5dff5b35d5ff0f1248a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a365867664443566e3831415958363858766432492d674032782e706e67"
+              />
+              <h1>FIGMA</h1>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">
+              <img
+                src="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png"
+              />
+              <h1>BOOTSTRAP</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 1</h1>
+              <h2>Coding is Love</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 2</h1>
+              <h2>Coding is Love</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 3</h1>
+              <h2>Coding is Love</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 4</h1>
+              <h2>Coding is Love</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 5</h1>
+              <h2>Coding is Love</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./Diptanshu's img.jpeg" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Front End Developer</h2>
+          <p>
+            An enthusiastic Learner looking for the great opportunities Web
+            Design and Development mostly specializing in front-end development.
+            currently aspiring to be a full-stack Web Developer with problem
+            solving skills. <br />
+            A firm believer in my own abilities, I am also a team player who
+            thrives in a challenging environment.I am a fresher with new and
+            dynamics project ideas. Well-versed in numerous programming
+            languages. with strong background in project management and customer
+            relations.
+          </p>
+          <a href="#" class="cta">Download Resume</a>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+91 758 297 4834</h2>
+              <h2>+91 845 891 8064</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>Diptanshubhawsar50@gmail.com</h2>
+              <h2>shivabhawsar50@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>
+                Ayodhya Nagar, Sector C, ISRO Colony, Ayodhya Bypass, Bhopal,
+                Madhya Pradesh 462041
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1>Diptanshu's social profiles</h1>
+        </div>
+        <h2>The best coder.</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://www.facebook.com/diptanshu.bhawsar"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+            /></a>
+          </div>
+          <div class="">
+            <a href="https://www.instagram.com/diptanshu_bhawsar/"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://twitter.com/DiptanshuBhaws3"
+              ><img
+                src="https://cdn.pixabay.com/photo/2017/01/10/04/09/bubbles-1968272_640.png"
+            /></a>
+          </div>
+          <div class="">
+            <a href="https://www.behance.net/diptansbhawsar"
+              ><img src="https://img.icons8.com/bubbles/100/000000/behance.png"
+            /></a>
+          </div>
+        </div>
+        <p>Copyright © 2021 . All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+  </body>
+</html>
